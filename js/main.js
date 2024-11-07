@@ -104,7 +104,7 @@
     });
   };
 
-  const API_KEY_LYRICS = '1730939468023';
+  const API_KEY_LYRICS = ''1637b78dc3b129e6843ed674489a92d0';
   const cache = {};
 
   // Iconos de Meteor Icons: https://meteoricons.com/
