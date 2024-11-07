@@ -1,0 +1,47 @@
+/* Ocultar la opción de TV Online */
+.online-tv {
+    visibility: hidden; /* O puedes probar las otras opciones si es necesario */
+    /* width: 0;
+    height: 0;
+    overflow: hidden; */
+    /* position: absolute;
+    left: -9999px; */
+}
+
+/* Reducir el tamaño de las letras de la canción y del artista */
+.player-cover-title .song-name {
+    font-size: 12px; /* Ajusta el tamaño a tu preferencia */
+}
+
+.player-cover-title .song-artist {
+    font-size: 10px; /* Ajusta el tamaño a tu preferencia */
+}
+
+/* Opcional: Si quieres cambiar el espaciado también */
+.player-cover-title {
+    line-height: 1.2; /* Ajusta el espaciado entre líneas */
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el desbordamiento */
+    position: relative; /* Necesario para posicionar el texto absolutamente */
+}
+
+/* Agregar la animación de desplazamiento */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.song-name,
+.song-artist {
+    display: inline-block; /* Permite aplicar la animación */
+    animation: marquee 10s linear infinite; /* Ajusta la duración a tu preferencia */
+}
+
+/* Animación de la portada */
+.player-cover-image {
+    animation: bga 60s linear infinite;
+}
